@@ -29,12 +29,12 @@
 }
 
 #nav {
-  background-color: #EFEFEF;
-  padding: 30px;
+  padding: 20px;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    font-size: 20px;
 
     &.router-link-exact-active {
       color: #666666;
@@ -48,8 +48,7 @@
   flex-direction: row;
   justify-content: space-around;
 
-  background-color: #EFEFEF;
-  padding: 30px;
+  padding: 20px;
   align-content: space-around;
 
   a {
