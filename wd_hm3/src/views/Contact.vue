@@ -16,6 +16,28 @@
         </div>
 
         <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1622531233735x512153190912028100%2FVertical.jpg" alt="logo">
+
+    </div>
+
+    <div class="contacts">
+            <div class="person">
+                <h2>Astrid Laupmaa</h2>
+                <h3>astrid@kanvas.ai</h3>
+                <h3>+372 5454 5454</h3>
+            </div>
+
+            <div class="person">
+                <h2>Larissa Pelke</h2>
+                <h3>larissa@kanvas.ai</h3>
+                <h3>+372 5656 5656</h3>
+            </div>
+
+            <div class="person">
+                <h2>Karola Reinholm</h2>
+                <h3>karola@kanvas.ai</h3>
+                <h3>+372 5757 5757</h3>
+            </div>
+
     </div>
   </div>
 
@@ -76,5 +98,15 @@ h1 {
 .submit{
     display: flex;
     justify-content: center;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.person{
+    padding: 0px 50px 0px 50px;
 }
 </style>
