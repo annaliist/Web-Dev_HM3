@@ -3,9 +3,9 @@
     <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1609072752424x654841387818197400%2Fhorisontal%2520%25E2%2580%2593%2520koopia.jpg?w=256&h=45&auto=compress&fit=crop&dpr=1" alt="">
     
     <div class="links">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="contact">Contact</router-link>
+      <router-link tag="li" to="/">Home</router-link>
+      <router-link tag="li" to="/about">About</router-link>
+      <router-link tag="li" to="contact">Contact</router-link>
     </div>
 </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 #navbar {
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 <template>
-    <div id="footer1">
+  <div id="footer1">
     <router-link to="contact">Contact Us</router-link>
 
     <div class="icons">
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #footer1 {
   align-items: center;
   display: flex;
@@ -33,11 +33,10 @@ export default {
     font-size: 20px;
   }
 
-  .icons{
-    img {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  .icons img {
+    padding-left: 20px;
+    padding-right: 20px;
+  
   }
 }
 </style>

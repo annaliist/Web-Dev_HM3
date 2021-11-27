@@ -6,23 +6,25 @@
 
           <div class="top">   <!-- divTop -->
             <div class="author">
-              <div class='<img>'> <img v-bind:src=product.profile_image /> </div>
+              <img v-bind:src=product.profile_image />
               <div class='<h3 class="comment">'> {{ product.author}} </div>
             </div>
-            <div class='<h3>'> {{ product.date }} </div>
+            <div class="date"> {{ product.date }} </div>
           </div>
 
           <div class="image"> <!-- divImage -->
             <div class="image"> 
-              <div class='<img>'> <img v-bind:src=product.image /> </div>
-              <div class='<p class="comment">'> {{ product.body }} </div>
+              <div class='img'> <img v-bind:src=product.image /> </div>
+              <div class="comment"> {{ product.body }} </div>
             </div>
           </div>
 
-        <div class="bottom"> <div id="like">  <button v-on:click="like"> Like </button> {{ product.counter }}
-                                              </div> 
-                                              <!-- divBottom --> 
+        <div class="bottom">
+          <div id="like"> 
+            <button v-on:click="like"> Like </button> {{ product.counter }}
+          </div> 
         </div>
+        
       </div>
     </div>
   </div>
@@ -39,23 +41,23 @@ export default {
     return this.$store.state.productList
   }},
   methods: {
-like: function() {
-this.$store.commit("like")},
- reset: function() {
- this.$store.commit("reset");
- }},
+  like: function() {
+  this.$store.commit("like")},
+  reset: function() {
+  this.$store.commit("reset");
+  }},
   };
 </script>
 
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+#reset {
+  padding-bottom: 20px;
+  padding-left: 410px;
+}
 
 .posts {
   background-color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
   max-width: 900px;
   margin: auto;
 }
@@ -84,10 +86,29 @@ this.$store.commit("like")},
   margin: 20px;
 }
 
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
 .author img {
   height: 30px;
   width: 30px;
+  padding-right: 10px;
   border-radius: 50%;
+}
+
+.date{
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.comment {
+  color: #2c3e50;
+  font-size: 18px;
 }
 
 /* descendant selector */
@@ -98,6 +119,13 @@ div img {
   width: auto;
   height: auto;
   margin: auto;
+}
+
+.image div {
+  padding: 0px 10px 10px 10px;
+}
+
+.img img {
   padding-bottom: 10px;
 }
 
@@ -108,7 +136,7 @@ div img {
 }
 
 .bottom {
-  margin: 20px;
+  padding: 0px 0px 10px 20px;
 }
 
 /* adjacent sibling selector */

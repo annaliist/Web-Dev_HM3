@@ -79,6 +79,15 @@ textarea {
 h1 {
     padding: 100px 0px 50px 0px;
     font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }
 
 .contact {

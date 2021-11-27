@@ -21,6 +21,7 @@ export default createStore({
       product.counter += 1;})},
     reset: state => {
       state.productList.forEach(product => {
-      product.counter = 0;})}
+      product.counter = 0;})
+    }
   },
 });
